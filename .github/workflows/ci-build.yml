@@ -33,11 +33,6 @@ jobs:
         python3 -m pip install construct
         python3 -m pip install Sphinx sphinxcontrib-wavedrom meson ninja setuptools_scm Jinja2
         
-    # - name: patch migen bug
-    #   working-directory: ./gateware/deps/migen
-    #   run: |
-    #     git apply ../migen-asyncmem.patch
-
     - name: Patch
       working-directory: ./gateware/deps
       run: |
